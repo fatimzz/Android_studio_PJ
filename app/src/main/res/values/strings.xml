@@ -3,4 +3,11 @@
     <string name="login">Login</string>
     <string name="password">Pssword</string>
     <string name="connection">Connection</string>
+
+<string name="compte">Compte</string>
+<string name="ref">Référence</string>
+<string name="desc">Description</string>
+<string name="date">Date</string>
+<string name="montant">Montant</string>
+<string name="solde">Solde</string>
 </resources>

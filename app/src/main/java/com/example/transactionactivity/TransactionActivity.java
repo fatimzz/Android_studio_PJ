@@ -1,5 +1,6 @@
 package com.example.transactionactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,8 +51,11 @@ public class TransactionActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int
             position, long id) {
-                Toast.makeText(getApplicationContext(),"itemclicked",Toast.LENGTH_LONG);
+                Intent intent = new
+                        Intent(getApplicationContext(),TransactionDetailsActivity.class);
+                intent.putExtra("transactionObject",listTrans.get(position));
+                startActivity(intent);
             }
         });
-    }
+ }
 }
